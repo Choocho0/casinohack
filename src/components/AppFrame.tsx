@@ -1,4 +1,5 @@
 import TabBar from "@/components/TabBar";
+import DataDate from "@/components/DataDate";
 
 /**
  * 모바일 앱 프레임 (CLAUDE.md §4)
@@ -19,9 +20,7 @@ export default function AppFrame({
           <h1 className="text-xl font-bold tracking-tight">
             Nowcast<span className="text-gold">.</span>
           </h1>
-          <span className="text-[11px] text-text-sub">
-            데이터 기준일: {dataDate ?? "준비 중"}
-          </span>
+          <DataDate initial={dataDate ?? "준비 중"} />
         </div>
       </header>
 

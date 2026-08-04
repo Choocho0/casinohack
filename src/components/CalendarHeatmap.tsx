@@ -5,7 +5,7 @@
  * - 오늘의 예보 카드 + 월 네비게이션 히트맵 + 날짜 탭 하단 시트
  * - 서버(page.tsx)에서 계산한 ForecastCell[]을 받아 렌더만 담당
  */
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { ForecastCell } from "@/lib/forecast";
 import { LevelChip, PredBadge, LEVEL_LABEL } from "@/components/ForecastBadge";
 
@@ -24,10 +24,22 @@ function todayStr(): string {
 }
 
 export default function CalendarHeatmap({ cells }: { cells: ForecastCell[] }) {
-  const byDate = useMemo(() => new Map(cells.map((c) => [c.date, c])), [cells]);
+  // 초기값 = 빌드 시 스냅샷 예보 → 마운트 후 /api/forecast(API 병합분)로 조용히 갱신.
+  // 갱신 실패 시 스냅샷 그대로 유지 (절대 규칙 3).
+  const [data, setData] = useState(cells);
+  useEffect(() => {
+    fetch("/api/forecast")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        if (Array.isArray(j?.cells) && j.cells.length) setData(j.cells);
+      })
+      .catch(() => {});
+  }, []);
+
+  const byDate = useMemo(() => new Map(data.map((c) => [c.date, c])), [data]);
   const months = useMemo(
-    () => Array.from(new Set(cells.map((c) => c.date.slice(0, 7)))).sort(),
-    [cells]
+    () => Array.from(new Set(data.map((c) => c.date.slice(0, 7)))).sort(),
+    [data]
   );
   const today = todayStr();
 
