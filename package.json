@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "snapshot": "tsx scripts/build_snapshot.ts"
+    "snapshot": "tsx scripts/build_snapshot.ts",
+    "verify": "tsx scripts/verify_forecast.ts"
   },
   "dependencies": {
     "next": "14.2.35",

@@ -1,0 +1,366 @@
+{
+  "domestic": [
+    {
+      "date": "2026-06-01",
+      "issued": 5862,
+      "entered": 5861,
+      "noshow": 1
+    },
+    {
+      "date": "2026-06-02",
+      "issued": 6811,
+      "entered": 6805,
+      "noshow": 6
+    },
+    {
+      "date": "2026-06-03",
+      "issued": 6461,
+      "entered": 6458,
+      "noshow": 3
+    },
+    {
+      "date": "2026-06-04",
+      "issued": 5364,
+      "entered": 5361,
+      "noshow": 3
+    },
+    {
+      "date": "2026-06-05",
+      "issued": 7148,
+      "entered": 7141,
+      "noshow": 7
+    },
+    {
+      "date": "2026-06-06",
+      "issued": 8776,
+      "entered": 8768,
+      "noshow": 8
+    },
+    {
+      "date": "2026-06-07",
+      "issued": 6540,
+      "entered": 6538,
+      "noshow": 2
+    },
+    {
+      "date": "2026-06-08",
+      "issued": 5275,
+      "entered": 5275,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-09",
+      "issued": 5184,
+      "entered": 5181,
+      "noshow": 3
+    },
+    {
+      "date": "2026-06-10",
+      "issued": 5366,
+      "entered": 5360,
+      "noshow": 6
+    },
+    {
+      "date": "2026-06-11",
+      "issued": 5166,
+      "entered": 5164,
+      "noshow": 2
+    },
+    {
+      "date": "2026-06-12",
+      "issued": 6111,
+      "entered": 6103,
+      "noshow": 8
+    },
+    {
+      "date": "2026-06-13",
+      "issued": 7876,
+      "entered": 7872,
+      "noshow": 4
+    },
+    {
+      "date": "2026-06-14",
+      "issued": 6133,
+      "entered": 6130,
+      "noshow": 3
+    },
+    {
+      "date": "2026-06-15",
+      "issued": 5148,
+      "entered": 5144,
+      "noshow": 4
+    },
+    {
+      "date": "2026-06-16",
+      "issued": 5226,
+      "entered": 5225,
+      "noshow": 1
+    },
+    {
+      "date": "2026-06-17",
+      "issued": 4948,
+      "entered": 4943,
+      "noshow": 5
+    },
+    {
+      "date": "2026-06-18",
+      "issued": 4876,
+      "entered": 4870,
+      "noshow": 6
+    },
+    {
+      "date": "2026-06-19",
+      "issued": 6677,
+      "entered": 6668,
+      "noshow": 9
+    },
+    {
+      "date": "2026-06-20",
+      "issued": 8501,
+      "entered": 8490,
+      "noshow": 11
+    },
+    {
+      "date": "2026-06-21",
+      "issued": 6190,
+      "entered": 6185,
+      "noshow": 5
+    },
+    {
+      "date": "2026-06-22",
+      "issued": 4909,
+      "entered": 4902,
+      "noshow": 7
+    },
+    {
+      "date": "2026-06-23",
+      "issued": 4873,
+      "entered": 4869,
+      "noshow": 4
+    },
+    {
+      "date": "2026-06-24",
+      "issued": 4770,
+      "entered": 4767,
+      "noshow": 3
+    },
+    {
+      "date": "2026-06-25",
+      "issued": 5193,
+      "entered": 5189,
+      "noshow": 4
+    },
+    {
+      "date": "2026-06-26",
+      "issued": 7073,
+      "entered": 7066,
+      "noshow": 7
+    },
+    {
+      "date": "2026-06-27",
+      "issued": 8263,
+      "entered": 8257,
+      "noshow": 6
+    },
+    {
+      "date": "2026-06-28",
+      "issued": 6407,
+      "entered": 6404,
+      "noshow": 3
+    },
+    {
+      "date": "2026-06-29",
+      "issued": 5214,
+      "entered": 5212,
+      "noshow": 2
+    },
+    {
+      "date": "2026-06-30",
+      "issued": 5272,
+      "entered": 5269,
+      "noshow": 3
+    }
+  ],
+  "foreign": [
+    {
+      "date": "2026-06-01",
+      "issued": 60,
+      "entered": 60,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-02",
+      "issued": 49,
+      "entered": 49,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-03",
+      "issued": 55,
+      "entered": 55,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-04",
+      "issued": 55,
+      "entered": 55,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-05",
+      "issued": 67,
+      "entered": 67,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-06",
+      "issued": 90,
+      "entered": 90,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-07",
+      "issued": 50,
+      "entered": 50,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-08",
+      "issued": 49,
+      "entered": 49,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-09",
+      "issued": 60,
+      "entered": 60,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-10",
+      "issued": 59,
+      "entered": 59,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-11",
+      "issued": 59,
+      "entered": 59,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-12",
+      "issued": 45,
+      "entered": 45,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-13",
+      "issued": 69,
+      "entered": 69,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-14",
+      "issued": 52,
+      "entered": 52,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-15",
+      "issued": 68,
+      "entered": 67,
+      "noshow": 1
+    },
+    {
+      "date": "2026-06-16",
+      "issued": 57,
+      "entered": 57,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-17",
+      "issued": 63,
+      "entered": 63,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-18",
+      "issued": 58,
+      "entered": 58,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-19",
+      "issued": 70,
+      "entered": 70,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-20",
+      "issued": 72,
+      "entered": 72,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-21",
+      "issued": 85,
+      "entered": 85,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-22",
+      "issued": 53,
+      "entered": 53,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-23",
+      "issued": 62,
+      "entered": 61,
+      "noshow": 1
+    },
+    {
+      "date": "2026-06-24",
+      "issued": 71,
+      "entered": 71,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-25",
+      "issued": 59,
+      "entered": 59,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-26",
+      "issued": 67,
+      "entered": 67,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-27",
+      "issued": 135,
+      "entered": 134,
+      "noshow": 1
+    },
+    {
+      "date": "2026-06-28",
+      "issued": 60,
+      "entered": 58,
+      "noshow": 2
+    },
+    {
+      "date": "2026-06-29",
+      "issued": 55,
+      "entered": 55,
+      "noshow": 0
+    },
+    {
+      "date": "2026-06-30",
+      "issued": 56,
+      "entered": 56,
+      "noshow": 0
+    }
+  ]
+}
