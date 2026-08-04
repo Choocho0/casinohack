@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #14161c;
+  color: #f2f3f5;
+}
+
+/* 스크롤바 최소화 (모바일 앱 무드) */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
