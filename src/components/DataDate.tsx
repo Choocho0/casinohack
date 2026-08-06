@@ -14,10 +14,12 @@ export default function DataDate({ initial }: { initial: string }) {
     fetch("/api/forecast?meta=1")
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => {
-        if (j?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(j.dataDate)) setDate(j.dataDate);
+        // API 병합분이 더 최신일 때만 갱신 (초기 표시일 유지)
+        if (j?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(j.dataDate) && j.dataDate > initial)
+          setDate(j.dataDate);
       })
       .catch(() => {});
-  }, []);
+  }, [initial]);
 
   return <span className="text-[11px] text-text-sub">데이터 기준일: {date}</span>;
 }

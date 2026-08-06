@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import AppFrame from "@/components/AppFrame";
-import { getDataBaseDate } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Nowcast — 카지노 혼잡 예보",
@@ -27,7 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-bg-base font-sans text-text-main antialiased">
-        <AppFrame dataDate={getDataBaseDate()}>{children}</AppFrame>
+        <AppFrame dataDate="2026-08-11">{children}</AppFrame>
       </body>
     </html>
   );

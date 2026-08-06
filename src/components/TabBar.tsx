@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const TABS = [
-  { href: "/", label: "예보", icon: CalendarIcon },
+  { href: "/app", label: "예보", icon: CalendarIcon },
   { href: "/games", label: "게임", icon: CardsIcon },
   { href: "/guide", label: "AI 가이드", icon: ChatIcon },
 ] as const;
@@ -16,8 +16,7 @@ export default function TabBar() {
     <nav className="fixed bottom-0 left-1/2 z-30 w-full max-w-[390px] -translate-x-1/2 border-t border-white/5 bg-bg-card/95 backdrop-blur">
       <div className="flex">
         {TABS.map(({ href, label, icon: Icon }) => {
-          const active =
-            href === "/" ? pathname === "/" : pathname.startsWith(href);
+          const active = pathname.startsWith(href);
           return (
             <Link
               key={href}
