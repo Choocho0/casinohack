@@ -16,10 +16,22 @@ export default function AppFrame({
   return (
     <div className="mx-auto flex min-h-screen max-w-[390px] flex-col bg-bg-base">
       <header className="sticky top-0 z-20 bg-gradient-to-r from-bg-base via-bg-base to-burgundy/30 px-5 pb-3 pt-5 backdrop-blur">
-        <div className="flex items-end justify-between">
-          <h1 className="text-xl font-bold tracking-tight">
-            Nowcast<span className="text-gold">.</span>
-          </h1>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            {/* 화면 전환: 앱(현재) ↔ 웹 페이지 */}
+            <div className="flex overflow-hidden rounded-lg border border-white/15 text-[10px] leading-none">
+              <span className="bg-gold px-2 py-1.5 font-bold text-[#14161C]">앱</span>
+              <a
+                href="/web"
+                className="px-2 py-1.5 font-semibold text-text-sub transition-colors hover:text-gold"
+              >
+                웹
+              </a>
+            </div>
+            <h1 className="text-xl font-bold tracking-tight">
+              Nowcast<span className="text-gold">.</span>
+            </h1>
+          </div>
           <DataDate initial={dataDate ?? "준비 중"} />
         </div>
       </header>
