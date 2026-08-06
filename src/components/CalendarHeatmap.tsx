@@ -246,9 +246,6 @@ function DateSheet({
           {cell.predicted ? "예약 " : "이용자 "}
           <span className="text-gold">{cell.expected.toLocaleString("ko-KR")}</span>명
         </p>
-        <p className="mt-1.5 text-[11px] leading-relaxed text-text-sub">
-          근거: {cell.basis}
-        </p>
 
         {best && best.date !== cell.date && (
           <div className="mt-4 rounded-xl bg-bg-base p-3.5">

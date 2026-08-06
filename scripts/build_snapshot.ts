@@ -148,7 +148,12 @@ function main() {
         blurb: meta?.blurb ?? "",
       };
     })
-    .sort((a, b) => b.units - a.units); // 좌석 규모 내림차순 = 초보자가 앉기 쉬운 순
+    // 좌석 규모 내림차순, 단 전자게임 시리즈는 맨 뒤에 한 묶음으로
+    .sort((a, b) => {
+      const ea = a.name.startsWith("전자게임") ? 1 : 0;
+      const eb = b.name.startsWith("전자게임") ? 1 : 0;
+      return ea !== eb ? ea - eb : b.units - a.units;
+    });
   writeFileSync(join(OUT_DIR, "games.json"), JSON.stringify(games, null, 2));
 
   console.log(`✅ snapshot_entry.json  : ${entry.length}일 (${entry[0]?.date} ~ ${entry.at(-1)?.date})`);

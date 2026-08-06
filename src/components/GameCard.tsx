@@ -19,6 +19,26 @@ const DIFF_STYLE: Record<Game["difficulty"], string> = {
   보통: "bg-busy/15 text-busy",
 };
 
+/** 게임별 진행 가이드 영상 (전자게임 시리즈는 공통 영상) */
+const ELECTRO_VIDEO = "https://youtu.be/n9tOWnBNX8Y?si=JEdVp10_-OX7i7KL";
+const GAME_VIDEOS: Record<string, string> = {
+  비디오게임: "https://youtu.be/yNxBER9W0CE?si=sWd9snE0hpkEZVNM",
+  블랙잭: "https://youtu.be/vX5gF3val40?si=u_Tax1L1CRxasO7f",
+  바카라: "https://youtu.be/760CRyRLWj0?si=AKkXawUFNzV8DnIL",
+  룰렛: "https://youtu.be/_N3jmvlzqPY?si=wzrd5H1324KXNoxy",
+  빅휠: "https://youtu.be/9gT3VwKXL8c?si=xpItfZmatMbSNhji",
+  다이사이: "https://youtu.be/5tWTcdLdueo?si=gPzum5jcF30eeFvE",
+  캐리비안스터드: "https://youtu.be/RDPbVLCzG7s?si=zX-nMp2KC8E1_ZDc",
+  카지노워: "https://youtu.be/N7Jgn8bSsIU?si=Uh4dxsax6zMI1bHy",
+  텍사스홀덤: "https://youtu.be/dEU5uCak4fg?si=NYZmY-nqmVxIU9dJ",
+  쓰리카드: "https://youtu.be/vAfLPSjTgcY?si=BeSr-Puzx5rrDZIi",
+};
+
+export function videoFor(name: string): string | undefined {
+  if (name.startsWith("전자게임")) return ELECTRO_VIDEO;
+  return GAME_VIDEOS[name];
+}
+
 export default function GameList({
   games,
   guides,
@@ -133,9 +153,20 @@ function GuideModal({
           안내를 따라주세요.
         </p>
 
+        {videoFor(game.name) && (
+          <a
+            href={videoFor(game.name)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-gold py-3 text-sm font-bold text-[#14161C]"
+          >
+            ▶ 게임 진행 가이드 영상 시청
+          </a>
+        )}
+
         <button
           onClick={onClose}
-          className="mt-4 w-full rounded-xl bg-white/5 py-3 text-sm text-text-sub"
+          className="mt-3 w-full rounded-xl bg-white/5 py-3 text-sm text-text-sub"
         >
           닫기
         </button>
