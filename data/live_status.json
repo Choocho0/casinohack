@@ -1,0 +1,954 @@
+{
+ "dataDate": "2026-08-11",
+ "usageThresholds": {
+  "ok": 5324,
+  "busy": 6588
+ },
+ "resvThresholds": {
+  "ok": 4272,
+  "busy": 5138
+ },
+ "cells": [
+  {
+   "date": "2026-06-01",
+   "level": "mid",
+   "expected": 5921,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-02",
+   "level": "busy",
+   "expected": 6854,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-03",
+   "level": "mid",
+   "expected": 6513,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false,
+   "holidayName": "지방선거일"
+  },
+  {
+   "date": "2026-06-04",
+   "level": "mid",
+   "expected": 5416,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-05",
+   "level": "busy",
+   "expected": 7208,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-06",
+   "level": "busy",
+   "expected": 8858,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false,
+   "holidayName": "현충일"
+  },
+  {
+   "date": "2026-06-07",
+   "level": "busy",
+   "expected": 6588,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-08",
+   "level": "ok",
+   "expected": 5324,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-09",
+   "level": "ok",
+   "expected": 5241,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-10",
+   "level": "mid",
+   "expected": 5419,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-11",
+   "level": "ok",
+   "expected": 5223,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-12",
+   "level": "mid",
+   "expected": 6148,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-13",
+   "level": "busy",
+   "expected": 7941,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-14",
+   "level": "mid",
+   "expected": 6182,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-15",
+   "level": "ok",
+   "expected": 5212,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-16",
+   "level": "ok",
+   "expected": 5282,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-17",
+   "level": "ok",
+   "expected": 5006,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-18",
+   "level": "ok",
+   "expected": 4928,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-19",
+   "level": "busy",
+   "expected": 6738,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-20",
+   "level": "busy",
+   "expected": 8562,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-21",
+   "level": "mid",
+   "expected": 6270,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-22",
+   "level": "ok",
+   "expected": 4955,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-23",
+   "level": "ok",
+   "expected": 4931,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-24",
+   "level": "ok",
+   "expected": 4838,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-25",
+   "level": "ok",
+   "expected": 5248,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-26",
+   "level": "busy",
+   "expected": 7133,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-27",
+   "level": "busy",
+   "expected": 8392,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-28",
+   "level": "mid",
+   "expected": 6464,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-29",
+   "level": "ok",
+   "expected": 5267,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-06-30",
+   "level": "mid",
+   "expected": 5325,
+   "basis": "일자별 이용자 현황 (공공데이터)",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-01",
+   "level": "mid",
+   "expected": 5357,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-02",
+   "level": "ok",
+   "expected": 5103,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-03",
+   "level": "busy",
+   "expected": 7087,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-04",
+   "level": "busy",
+   "expected": 8015,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-05",
+   "level": "busy",
+   "expected": 6700,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-06",
+   "level": "ok",
+   "expected": 5287,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-07",
+   "level": "mid",
+   "expected": 5481,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-08",
+   "level": "mid",
+   "expected": 5333,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-09",
+   "level": "mid",
+   "expected": 5564,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-10",
+   "level": "mid",
+   "expected": 6478,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-11",
+   "level": "busy",
+   "expected": 7925,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-12",
+   "level": "busy",
+   "expected": 6816,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-13",
+   "level": "mid",
+   "expected": 5396,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-14",
+   "level": "mid",
+   "expected": 5488,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-15",
+   "level": "mid",
+   "expected": 5701,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-16",
+   "level": "ok",
+   "expected": 4928,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-17",
+   "level": "mid",
+   "expected": 6448,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-18",
+   "level": "busy",
+   "expected": 8917,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-19",
+   "level": "busy",
+   "expected": 6811,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-20",
+   "level": "mid",
+   "expected": 5517,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-21",
+   "level": "mid",
+   "expected": 5643,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-22",
+   "level": "ok",
+   "expected": 5229,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-23",
+   "level": "mid",
+   "expected": 5495,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-24",
+   "level": "busy",
+   "expected": 6985,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-25",
+   "level": "busy",
+   "expected": 8013,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-26",
+   "level": "mid",
+   "expected": 6363,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-27",
+   "level": "ok",
+   "expected": 5065,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-28",
+   "level": "mid",
+   "expected": 5407,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-29",
+   "level": "ok",
+   "expected": 5148,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-30",
+   "level": "ok",
+   "expected": 5320,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-07-31",
+   "level": "busy",
+   "expected": 7099,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-01",
+   "level": "busy",
+   "expected": 7857,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-02",
+   "level": "mid",
+   "expected": 6004,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-03",
+   "level": "mid",
+   "expected": 5399,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-04",
+   "level": "ok",
+   "expected": 5265,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-05",
+   "level": "mid",
+   "expected": 5445,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-06",
+   "level": "ok",
+   "expected": 4920,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-07",
+   "level": "busy",
+   "expected": 6946,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-08",
+   "level": "busy",
+   "expected": 8671,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-09",
+   "level": "mid",
+   "expected": 6304,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-10",
+   "level": "ok",
+   "expected": 5218,
+   "basis": "일자별 이용자 현황",
+   "predicted": false
+  },
+  {
+   "date": "2026-08-11",
+   "level": "ok",
+   "expected": 4177,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-12",
+   "level": "ok",
+   "expected": 4121,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-13",
+   "level": "mid",
+   "expected": 4336,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-14",
+   "level": "busy",
+   "expected": 5388,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-15",
+   "level": "busy",
+   "expected": 8070,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "광복절"
+  },
+  {
+   "date": "2026-08-16",
+   "level": "mid",
+   "expected": 4751,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-17",
+   "level": "mid",
+   "expected": 5074,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "대체공휴일(광복절)"
+  },
+  {
+   "date": "2026-08-18",
+   "level": "ok",
+   "expected": 4016,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-19",
+   "level": "ok",
+   "expected": 4198,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-20",
+   "level": "ok",
+   "expected": 3791,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-21",
+   "level": "busy",
+   "expected": 5139,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-22",
+   "level": "busy",
+   "expected": 6453,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-23",
+   "level": "mid",
+   "expected": 4908,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-24",
+   "level": "mid",
+   "expected": 4394,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-25",
+   "level": "mid",
+   "expected": 4363,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-26",
+   "level": "ok",
+   "expected": 4268,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-27",
+   "level": "ok",
+   "expected": 4087,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-28",
+   "level": "busy",
+   "expected": 5221,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-29",
+   "level": "busy",
+   "expected": 6786,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-30",
+   "level": "mid",
+   "expected": 5100,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-08-31",
+   "level": "mid",
+   "expected": 4322,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-01",
+   "level": "mid",
+   "expected": 4491,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-02",
+   "level": "ok",
+   "expected": 4027,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-03",
+   "level": "ok",
+   "expected": 4116,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-04",
+   "level": "busy",
+   "expected": 5609,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-05",
+   "level": "busy",
+   "expected": 6203,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-06",
+   "level": "busy",
+   "expected": 5340,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-07",
+   "level": "ok",
+   "expected": 3848,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-08",
+   "level": "ok",
+   "expected": 4124,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-09",
+   "level": "ok",
+   "expected": 3976,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-10",
+   "level": "ok",
+   "expected": 3864,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-11",
+   "level": "busy",
+   "expected": 5290,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-12",
+   "level": "busy",
+   "expected": 6768,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-13",
+   "level": "mid",
+   "expected": 5135,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-14",
+   "level": "mid",
+   "expected": 4280,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-15",
+   "level": "ok",
+   "expected": 4204,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-16",
+   "level": "ok",
+   "expected": 4061,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-17",
+   "level": "ok",
+   "expected": 4158,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-18",
+   "level": "busy",
+   "expected": 5689,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-19",
+   "level": "busy",
+   "expected": 6684,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-20",
+   "level": "mid",
+   "expected": 5114,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-21",
+   "level": "mid",
+   "expected": 4420,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-22",
+   "level": "mid",
+   "expected": 4491,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-23",
+   "level": "mid",
+   "expected": 4288,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-24",
+   "level": "mid",
+   "expected": 4819,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "추석 연휴"
+  },
+  {
+   "date": "2026-09-25",
+   "level": "busy",
+   "expected": 5779,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "추석"
+  },
+  {
+   "date": "2026-09-26",
+   "level": "busy",
+   "expected": 7469,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "추석 연휴"
+  },
+  {
+   "date": "2026-09-27",
+   "level": "mid",
+   "expected": 4623,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-28",
+   "level": "ok",
+   "expected": 4057,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-29",
+   "level": "mid",
+   "expected": 4485,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-09-30",
+   "level": "mid",
+   "expected": 4423,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-01",
+   "level": "ok",
+   "expected": 4062,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-02",
+   "level": "mid",
+   "expected": 4930,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-03",
+   "level": "busy",
+   "expected": 7819,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "개천절"
+  },
+  {
+   "date": "2026-10-04",
+   "level": "mid",
+   "expected": 4852,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-05",
+   "level": "mid",
+   "expected": 5014,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "대체공휴일(개천절)"
+  },
+  {
+   "date": "2026-10-06",
+   "level": "mid",
+   "expected": 4568,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-07",
+   "level": "ok",
+   "expected": 4076,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-08",
+   "level": "mid",
+   "expected": 4319,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-09",
+   "level": "busy",
+   "expected": 6308,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true,
+   "holidayName": "한글날"
+  },
+  {
+   "date": "2026-10-10",
+   "level": "busy",
+   "expected": 6639,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  },
+  {
+   "date": "2026-10-11",
+   "level": "busy",
+   "expected": 5242,
+   "basis": "예약 접수 현황 (2026-08-11 집계 기준)",
+   "predicted": true
+  }
+ ]
+}

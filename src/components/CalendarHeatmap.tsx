@@ -63,7 +63,7 @@ export default function CalendarHeatmap({ cells }: { cells: ForecastCell[] }) {
       <section className="rounded-2xl bg-bg-card p-5">
         <div className="flex items-center justify-between">
           <p className="text-xs text-text-sub">
-            오늘의 예보 · {Number(today.slice(5, 7))}월 {Number(today.slice(8, 10))}일 (
+            오늘의 현황 · {Number(today.slice(5, 7))}월 {Number(today.slice(8, 10))}일 (
             {WEEKDAY_KO[new Date(`${today}T00:00:00`).getDay()]})
           </p>
           {todayCell?.predicted && <PredBadge />}
@@ -75,7 +75,8 @@ export default function CalendarHeatmap({ cells }: { cells: ForecastCell[] }) {
                 {LEVEL_LABEL[todayCell.level]}
               </span>
               <span className="text-sm text-text-sub">
-                예상 {todayCell.expected.toLocaleString("ko-KR")}명
+                {todayCell.predicted ? "예약" : "이용자"}{" "}
+                {todayCell.expected.toLocaleString("ko-KR")}명
               </span>
             </div>
             <p className="mt-2 text-[11px] leading-relaxed text-text-sub">
@@ -84,7 +85,7 @@ export default function CalendarHeatmap({ cells }: { cells: ForecastCell[] }) {
           </>
         ) : (
           <p className="mt-2 text-sm text-text-sub">
-            오늘 날짜의 예보 데이터가 없습니다
+            오늘 날짜의 현황 데이터가 없습니다
           </p>
         )}
       </section>
@@ -141,7 +142,7 @@ export default function CalendarHeatmap({ cells }: { cells: ForecastCell[] }) {
                 {cell?.predicted && (
                   <span
                     className="absolute right-1 top-1 h-1 w-1 rounded-full bg-[#14161C]/50"
-                    aria-label="예측"
+                    aria-label="예약"
                   />
                 )}
                 {cell?.holidayName && (
@@ -159,7 +160,7 @@ export default function CalendarHeatmap({ cells }: { cells: ForecastCell[] }) {
             <Legend color="bg-busy" label="혼잡" />
           </div>
           <span className="flex items-center gap-1">
-            <span className="h-1 w-1 rounded-full bg-white/50" /> 표시 = 예측
+            <span className="h-1 w-1 rounded-full bg-white/50" /> 표시 = 예약 현황
           </span>
         </div>
       </section>
@@ -242,7 +243,7 @@ function DateSheet({
         </div>
 
         <p className="mt-3 text-2xl font-semibold">
-          {cell.predicted ? "예상 " : ""}
+          {cell.predicted ? "예약 " : "이용자 "}
           <span className="text-gold">{cell.expected.toLocaleString("ko-KR")}</span>명
         </p>
         <p className="mt-1.5 text-[11px] leading-relaxed text-text-sub">
@@ -257,7 +258,8 @@ function DateSheet({
               {WEEKDAY_KO[new Date(`${best.date}T00:00:00`).getDay()]}) ·{" "}
               <span className="text-ok">{LEVEL_LABEL[best.level]}</span>
               <span className="ml-1 text-xs font-normal text-text-sub">
-                예상 {best.expected.toLocaleString("ko-KR")}명
+                {best.predicted ? "예약" : "이용자"}{" "}
+                {best.expected.toLocaleString("ko-KR")}명
               </span>
               {best.predicted && <PredBadge className="ml-1.5" />}
             </p>

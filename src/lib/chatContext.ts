@@ -2,8 +2,9 @@
  * chatContext.ts — 챗봇 컨텍스트/시스템 프롬프트 구성 (CLAUDE.md §6-3)
  * 예보·게임·규칙 요약은 전부 스냅샷 데이터에서 생성 → 지어내기 방지의 근거.
  */
-import { games, getModel, getDataBaseDate } from "./data";
-import { forecastRange } from "./forecast";
+import { games } from "./data";
+import { statusCells, liveStatus } from "./status";
+import type { ForecastCell } from "./forecast";
 import { LEVEL_LABEL } from "@/components/ForecastBadge";
 import guidesJson from "../../data/game_guides.json";
 
@@ -18,19 +19,19 @@ export const guides: Record<string, GameGuideEntry> = (
   guidesJson as { guides: Record<string, GameGuideEntry> }
 ).guides;
 
-/** 오늘부터 14일 예보 요약 (서버 기준 KST) */
+/** 오늘부터 14일 현황 요약 (이용자/예약자 현황) */
 export function forecastSummary(todayISO: string): string {
-  const model = getModel();
   const end = new Date(`${todayISO}T00:00:00Z`);
   end.setUTCDate(end.getUTCDate() + 13);
-  const cells = forecastRange(model, todayISO, end.toISOString().slice(0, 10));
+  const endISO = end.toISOString().slice(0, 10);
+  const cells = statusCells.filter((c) => c.date >= todayISO && c.date <= endISO);
   return cells
     .map((c) => {
       const d = new Date(`${c.date}T00:00:00Z`).getUTCDay();
       const hol = c.holidayName ? ` ${c.holidayName}` : "";
-      return `${c.date}(${WEEKDAY_KO[d]})${hol}: ${LEVEL_LABEL[c.level]}${
-        c.predicted ? "(예측)" : ""
-      } 예상 ${c.expected.toLocaleString("ko-KR")}명 — ${c.basis}`;
+      return `${c.date}(${WEEKDAY_KO[d]})${hol}: ${LEVEL_LABEL[c.level]} ${
+        c.predicted ? "예약" : "이용자"
+      } ${c.expected.toLocaleString("ko-KR")}명 — ${c.basis}`;
     })
     .join("\n");
 }
@@ -49,10 +50,10 @@ export function guidesSummary(): string {
 
 export function buildSystemPrompt(todayISO: string): string {
   return `너는 강원랜드 카지노 첫 방문자를 돕는 안내 도우미 "Nowcast AI"다.
-오늘 날짜: ${todayISO} / 데이터 기준일: ${getDataBaseDate()}
+오늘 날짜: ${todayISO} / 데이터 기준일: ${liveStatus.dataDate}
 
 [컨텍스트]
-1. 향후 2주 혼잡 예보:
+1. 향후 2주 이용·예약 현황 (8/10까지 이용자 현황, 8/11부터 예약 접수 현황):
 ${forecastSummary(todayISO)}
 
 2. 게임별 좌석 규모 (카지노게임현황 데이터):
@@ -96,20 +97,23 @@ export function localAnswer(question: string, todayISO: string): string {
   }
 
   // 혼잡/방문 시점 질문
-  if (/주말|붐비|혼잡|언제|한산|여유|사람\s*많/.test(q)) {
-    const model = getModel();
+  if (/주말|붐비|혼잡|언제|한산|여유|사람\s*많|예약/.test(q)) {
     const end = new Date(`${todayISO}T00:00:00Z`);
     end.setUTCDate(end.getUTCDate() + 6);
-    const cells = forecastRange(model, todayISO, end.toISOString().slice(0, 10));
+    const endISO = end.toISOString().slice(0, 10);
+    const cells: ForecastCell[] = statusCells.filter(
+      (c) => c.date >= todayISO && c.date <= endISO
+    );
+    if (!cells.length) return "죄송해요, 해당 기간의 현황 데이터가 없어요.";
     const lines = cells
       .map((c) => {
         const d = new Date(`${c.date}T00:00:00Z`).getUTCDay();
-        return `· ${Number(c.date.slice(5, 7))}/${Number(c.date.slice(8, 10))}(${WEEKDAY_KO[d]}) ${LEVEL_LABEL[c.level]}${c.predicted ? "(예측)" : ""} 예상 ${c.expected.toLocaleString("ko-KR")}명`;
+        return `· ${Number(c.date.slice(5, 7))}/${Number(c.date.slice(8, 10))}(${WEEKDAY_KO[d]}) ${LEVEL_LABEL[c.level]} — ${c.predicted ? "예약" : "이용자"} ${c.expected.toLocaleString("ko-KR")}명`;
       })
       .join("\n");
     const best = cells.reduce((a, b) => (b.expected < a.expected ? b : a));
     const bd = new Date(`${best.date}T00:00:00Z`).getUTCDay();
-    return `이번 주 혼잡 예보(예측)입니다.\n\n${lines}\n\n가장 여유로운 날은 ${Number(best.date.slice(5, 7))}/${Number(best.date.slice(8, 10))}(${WEEKDAY_KO[bd]})로 예상돼요. 주말(금·토)은 혼잡 예측이 많으니 여유 있게 즐기시려면 평일 방문을 추천드립니다.\n\n근거: ${best.basis}`;
+    return `이번 주 이용·예약 현황입니다.\n\n${lines}\n\n가장 여유로운 날은 ${Number(best.date.slice(5, 7))}/${Number(best.date.slice(8, 10))}(${WEEKDAY_KO[bd]})예요. 주말(금·토)은 붐비는 편이니 여유 있게 즐기시려면 평일 방문을 추천드립니다.\n\n근거: ${best.basis}`;
   }
 
   // 처음 방문/절차 질문

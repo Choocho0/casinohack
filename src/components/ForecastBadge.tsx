@@ -34,13 +34,19 @@ export function LevelChip({
   );
 }
 
-/** 예측 뱃지 (절대 규칙 1: 미래 등급은 반드시 예측 라벨) */
-export function PredBadge({ className = "" }: { className?: string }) {
+/** 예약 뱃지 — 8/11 이후 셀은 예약 접수 현황임을 표시 */
+export function PredBadge({
+  className = "",
+  label = "예약",
+}: {
+  className?: string;
+  label?: string;
+}) {
   return (
     <span
       className={`inline-flex items-center rounded border border-gold/40 px-1 py-px text-[9px] font-medium leading-none text-gold ${className}`}
     >
-      예측
+      {label}
     </span>
   );
 }
