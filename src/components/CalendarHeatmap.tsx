@@ -79,9 +79,6 @@ export default function CalendarHeatmap({ cells }: { cells: ForecastCell[] }) {
                 {todayCell.expected.toLocaleString("ko-KR")}명
               </span>
             </div>
-            <p className="mt-2 text-[11px] leading-relaxed text-text-sub">
-              근거: {todayCell.basis}
-            </p>
           </>
         ) : (
           <p className="mt-2 text-sm text-text-sub">
@@ -247,7 +244,8 @@ function DateSheet({
           <span className="text-gold">{cell.expected.toLocaleString("ko-KR")}</span>명
         </p>
 
-        {best && best.date !== cell.date && (
+        {/* 추천 방문일은 예약 현황 기간(8/11~)에서만 표시 */}
+        {cell.predicted && best && best.date !== cell.date && (
           <div className="mt-4 rounded-xl bg-bg-base p-3.5">
             <p className="text-[11px] text-text-sub">이 주의 추천 방문일</p>
             <p className="mt-1 text-sm font-semibold">

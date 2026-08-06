@@ -443,7 +443,7 @@ function renderDetail(){
       </span>
     </div>
     <div class="d-num">${c.predicted?"예약 ":"이용자 "}<b>${fmt(c.expected)}</b>명</div>
-    ${best && best.date!==c.date ? `
+    ${c.predicted && best && best.date!==c.date ? `
     <div class="reco">
       <div class="t">이 주의 추천 방문일</div>
       <div class="v">${+best.date.slice(5,7)}월 ${+best.date.slice(8,10)}일 (${WD[dow(best.date)]}) · <em>${LEVEL[best.level]}</em>

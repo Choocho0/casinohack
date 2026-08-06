@@ -25,6 +25,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# 정리 대기 파일 (수동 삭제용)
+/_to_delete/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

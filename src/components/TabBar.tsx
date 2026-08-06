@@ -7,6 +7,7 @@ const TABS = [
   { href: "/app", label: "예보", icon: CalendarIcon },
   { href: "/games", label: "게임", icon: CardsIcon },
   { href: "/guide", label: "AI 가이드", icon: ChatIcon },
+  { href: "/howto", label: "이용 안내", icon: InfoIcon },
 ] as const;
 
 export default function TabBar() {
@@ -86,6 +87,29 @@ function CardsIcon({ active }: { active: boolean }) {
         strokeWidth="1.8"
         fill="none"
       />
+    </svg>
+  );
+}
+
+function InfoIcon({ active }: { active: boolean }) {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <circle
+        cx="12"
+        cy="12"
+        r="9"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        fill={active ? "currentColor" : "none"}
+        fillOpacity={active ? 0.15 : 0}
+      />
+      <path
+        d="M12 11v5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+      <circle cx="12" cy="8" r="1.2" fill="currentColor" />
     </svg>
   );
 }
